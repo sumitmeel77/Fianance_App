@@ -14,6 +14,9 @@ app.use(cookieParser())
 const user = require("./routers/userRoute")
 app.use("/api", user)
 
+const expense = require("./routers/expenseRoute")
+app.use("/api", expense)
+
 app.use(errorHandler)
 
 module.exports = app
